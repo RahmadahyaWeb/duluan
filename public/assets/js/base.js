@@ -77,12 +77,12 @@ var loader = document.getElementById('loader');
 //-----------------------------------------------------------------------
 // Page Loader with preload
 //----------------------------------------------------------------------
-// setTimeout(() => {
-//     loader.setAttribute("style", "pointer-events: none; opacity: 0; transition: 0.2s ease-in-out;");
-//     setTimeout(() => {
-//         loader.setAttribute("style", "display: none;")
-//     }, 1000);
-// }, 450);
+setTimeout(() => {
+    loader.setAttribute("style", "pointer-events: none; opacity: 0; transition: 0.2s ease-in-out;");
+    setTimeout(() => {
+        loader.setAttribute("style", "display: none;")
+    }, 1000);
+}, 450);
 //-----------------------------------------------------------------------
 
 

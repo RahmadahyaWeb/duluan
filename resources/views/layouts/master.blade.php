@@ -15,12 +15,15 @@
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/192x192.png">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/custom.css">
+    {{-- <link rel="stylesheet" href="/assets/css/custom.css"> --}}
 
     @livewireStyles
 </head>
 
 <body>
+    <div id="loader">
+        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+    </div>
 
     <div class="app-container">
         <livewire:notification-box />
@@ -34,10 +37,6 @@
     <script src="/assets/js/base.js"></script>
 
     @livewireScripts
-    <script>
-        // Add to Home with 2 seconds delay.
-        AddtoHome("2000", "once");
-    </script>
 </body>
 
 </html>
