@@ -1,0 +1,25 @@
+
+/* PWA mobile desktop */
+@media (min-width: 768px) {
+    .app-container
+    {
+    /*    set the max width for desktop and put in center*/
+        max-width: 50% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .app-container
+    {
+        max-width: 50% !important;
+        margin: 0 auto !important;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .app-container
+    {
+        max-width: 40% !important;
+        margin: 0 auto !important;
+    }
+}

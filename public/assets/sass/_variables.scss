@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////
+// Colors
+////////////////////////////////////////////////////
+
+// Body Background
+$bodyBackground : #EDEDF5;
+
+// Primary Colors
+$colorPrimary : #00bc7d;
+$colorSecondary : #00d492;
+$colorSuccess: #00bc7d;
+$colorDanger : #fb2c36;
+$colorWarning : #ffb900;
+$colorInfo : #00a6f4;
+
+// Line Colors
+$colorLine : #DCDCE9;
+
+// Text Colors
+$colorHeading : #002c22;
+$colorText : rgb(149, 141, 158);
+$colorLight : #A9ABAD;
+
+// Border Radius
+$borderRadius: 10px;
+
+// Safearea
+$safeBottom : env(safe-area-inset-bottom);
+$safeTop : env(safe-area-inset-top);
+
+
+////////////////////////////////////////////////////
+// Dark Mode Colors
+////////////////////////////////////////////////////
+$darkmode_bodyBackground: #030712;
+$darkmode_contentBackground: #101828;
+$darkmode_colorHeading: #fff;
+$darkmode_colorText: #a4f4cf;
+$darkmode_colorLight: #d0fae5;
+$darkmode_colorLine: #1e2939;
+
+
+////////////////////////////////////////////////////
+// Font Sizes
+////////////////////////////////////////////////////
+// You can change font family in _font.scss
+$fontSizeHeadingXLarge: 32px;
+$fontSizeHeadingLarge: 20px;
+$fontSizeHeading: 17px;
+$fontSize: 15px;
+$fontSizeSub: 13px;
+$fontSizeCaption: 11px;
+
+$bodyLineHeight: 1.6rem;
+$bodyLetterSpacing: 0.004em;
+
