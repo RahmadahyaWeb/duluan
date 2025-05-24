@@ -1,6 +1,10 @@
 <x-layouts.app>
     @include('pages.account.logout-dialog')
 
+    @section('header')
+        <x-header :showProfile="false" title="Akun" />
+    @endsection
+
     <div class="section mt-3 text-center">
         <div class="avatar-section">
             <a href="#">
@@ -50,7 +54,7 @@
     <div class="listview-title mt-1">Security</div>
     <ul class="listview image-listview text mb-2 inset">
         <li>
-            <a href="#" class="item">
+            <a href="{{ route('forgot-password.index') }}" class="item">
                 <div class="in">
                     <div>Update Password</div>
                 </div>

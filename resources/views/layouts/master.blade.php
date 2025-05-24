@@ -8,7 +8,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>Finapp</title>
+    <title>Duluan</title>
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords"
         content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
@@ -22,11 +22,12 @@
 
 <body>
     <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        <img src="/assets/img/loading-icon.png" alt="icon" class="loading-icon">
     </div>
 
     <div class="app-container">
         <livewire:notification-box />
+        <livewire:toast />
 
         @yield('content')
     </div>

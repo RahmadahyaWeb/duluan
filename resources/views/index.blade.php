@@ -1,4 +1,8 @@
 <x-layouts.app>
+    @section('header')
+        <x-header :showTitle="false" :goBack="false" />
+    @endsection
+
     <!-- Wallet Card -->
     <div class="section wallet-card-section pt-1">
         <div class="wallet-card">

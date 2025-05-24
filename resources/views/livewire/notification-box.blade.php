@@ -32,8 +32,6 @@
 
                 notification(data.id, 3000)
 
-                console.log(data.redirect, data.redirectTo)
-
                 if (data.redirect && data.redirectTo) {
                     setTimeout(() => {
                         window.location.href = data.redirectTo;

@@ -9,6 +9,7 @@ Route::get('/', function () {
 
 require __DIR__ . '/auth/login.php';
 require __DIR__ . '/auth/register.php';
+require __DIR__ . '/auth/forgot-password.php';
 require __DIR__ . '/account.php';
 
 Route::middleware('auth')->group(function () {
