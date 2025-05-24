@@ -30,7 +30,11 @@
 
         @if ($showProfile)
             <a href="{{ route('account.index') }}" class="headerButton">
-                <img src="/assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged w32">
+                @if (auth()->user()->profile_photo)
+                    <img src="{{ '/storage/' . auth()->user()->profile_photo }}" alt="avatar" class="imaged w32">
+                @else
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w32">
+                @endif
             </a>
         @endif
     </div>

@@ -2,7 +2,8 @@
     <!-- toast center iconed -->
     <div id="{{ $idToast }}" class="toast-box toast-center">
         <div class="in">
-            <ion-icon name="checkmark-circle" class="text-success md hydrated"></ion-icon>
+            <ion-icon name="{{ $success ? 'checkmark-circle' : 'alert-outline' }}"
+                class="{{ $success ? 'text-success' : 'text-danger' }} md hydrated"></ion-icon>
             <div class="text">
                 {{ $message }}
             </div>

@@ -329,12 +329,7 @@ uploadComponent.forEach(function (el) {
         tmppath = URL.createObjectURL(event.target.files[0]);
         if (name) {
             fileLabel.classList.add('file-uploaded');
-            fileLabel.style.backgroundImage = "url(" + tmppath + ")";
             fileLabelText.innerHTML = name;
-        }
-        else {
-            fileLabel.classList.remove("file-uploaded")
-            fileLabelText.innerHTML = filelabelDefault;
         }
     })
 })

@@ -12,7 +12,7 @@
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords"
         content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/192x192.png">
     <link rel="stylesheet" href="/assets/css/style.css">
     {{-- <link rel="stylesheet" href="/assets/css/custom.css"> --}}
@@ -22,7 +22,11 @@
 
 <body>
     <div id="loader">
-        <img src="/assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        {{-- <img src="/assets/img/loading-icon.png" alt="icon" class="loading-icon"> --}}
+        {{-- <div class="spinner-grow text-danger loading-icon" role="status"></div> --}}
+        <div class="loading-icon text-white" >
+            <div class="spinner-border" role="status"></div>
+        </div>
     </div>
 
     <div class="app-container">

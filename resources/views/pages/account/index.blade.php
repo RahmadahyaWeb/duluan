@@ -1,5 +1,6 @@
 <x-layouts.app>
     @include('pages.account.logout-dialog')
+    <livewire:pages.account.profile-modal />
 
     @section('header')
         <x-header :showProfile="false" title="Akun" />
@@ -7,8 +8,13 @@
 
     <div class="section mt-3 text-center">
         <div class="avatar-section">
-            <a href="#">
-                <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w100 rounded">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#profile-modal">
+                @if (auth()->user()->profile_photo)
+                    <img src="{{ '/storage/' . auth()->user()->profile_photo }}" alt="avatar"
+                        class="imaged w100 rounded">
+                @else
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w100 rounded">
+                @endif
                 <span class="button">
                     <ion-icon name="camera-outline"></ion-icon>
                 </span>
@@ -16,13 +22,13 @@
         </div>
     </div>
 
-    <div class="listview-title mt-1">Theme</div>
+    <div class="listview-title mt-1">Tema</div>
     <ul class="listview image-listview text inset no-line">
         <li>
             <div class="item">
                 <div class="in">
                     <div>
-                        Dark Mode
+                        Mode Gelap
                     </div>
                     <div class="form-check form-switch  ms-2">
                         <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodeSwitch">
@@ -33,7 +39,7 @@
         </li>
     </ul>
 
-    <div class="listview-title mt-1">Profile Settings</div>
+    <div class="listview-title mt-1">Pengaturan Profil</div>
     <ul class="listview image-listview text inset">
         <li>
             <a href="#" class="item">
@@ -51,12 +57,12 @@
         </li>
     </ul>
 
-    <div class="listview-title mt-1">Security</div>
+    <div class="listview-title mt-1">Keamanan</div>
     <ul class="listview image-listview text mb-2 inset">
         <li>
             <a href="{{ route('forgot-password.index') }}" class="item">
                 <div class="in">
-                    <div>Update Password</div>
+                    <div>Ganti Password</div>
                 </div>
             </a>
         </li>

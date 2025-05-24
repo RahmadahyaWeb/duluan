@@ -1079,7 +1079,7 @@ blockquote.blockquote .blockquote-footer {
 #loader .loading-icon {
   width: 42px;
   height: auto;
-  animation: loadingAnimation 0.5s ease-in-out infinite;
+  /* animation: loadingAnimation 0.5s ease-in-out infinite; */
 }
 #loader.hidden {
   display: none;
@@ -4944,8 +4944,7 @@ textarea,
   display: inline-flex;
 }
 .avatar-section .imaged {
-  border: 5px solid #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
 }
 .avatar-section .button {
   background: #00bc7d;

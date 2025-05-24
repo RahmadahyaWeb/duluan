@@ -31,6 +31,7 @@ class Toast extends Component
             'id' => $this->idToast,
             'redirect' => $this->redirect,
             'redirectTo' => $this->redirectTo,
+            'success' => $this->success,
         ]);
     }
 
